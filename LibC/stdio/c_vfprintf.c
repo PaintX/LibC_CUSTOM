@@ -17,15 +17,10 @@
 /* doc in sprintf.c */
 #include "c_stdio.h"
 
-int c_printf(const char *fmt, ...)
+int c_vfprintf(int stream, const char *fmt, va_list args)
 {
+    char buffer[MAXBUFFER];
     int ret;
-    va_list args;
-
-    va_start(args, fmt);
-    ret = c_vfprintf(C_STDOUT, fmt, args);
-    va_end (args);
-
+    ret = c_output(buffer, fmt, args);
     return ret;
 }
-

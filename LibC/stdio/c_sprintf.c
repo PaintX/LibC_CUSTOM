@@ -17,15 +17,19 @@
 /* doc in sprintf.c */
 #include "c_stdio.h"
 
-int c_printf(const char *fmt, ...)
+int c_sprintf(char *buf, const char *fmt, ...)
 {
-    int ret;
     va_list args;
+    int rc;
 
     va_start(args, fmt);
-    ret = c_vfprintf(C_STDOUT, fmt, args);
+
+    rc = c_output(buf, fmt, args);
+
     va_end (args);
 
-    return ret;
-}
+    if (buf != NULL)
+        buf[rc] = '\0';
 
+    return rc;
+}
