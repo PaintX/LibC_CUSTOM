@@ -32,10 +32,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="LibC/stdio/c_fcvt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LibC/stdio/c_output.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="LibC/stdio/c_printf.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="LibC/stdio/c_sprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="LibC/stdio/c_stdio.h" />
+		<Unit filename="LibC/stdio/c_vfprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,3 +1,5 @@
+//-- http://www.jbox.dk/sanos/source/lib/
+
 #include "c_stdio.h"
 
 int main()

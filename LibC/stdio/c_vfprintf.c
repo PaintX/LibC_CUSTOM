@@ -17,6 +17,7 @@
 /* doc in sprintf.c */
 #include "c_stdio.h"
 
+#if 0
 int c_vfprintf(int stream, const char *fmt, va_list args)
 {
     char buffer[MAXBUFFER];
@@ -24,3 +25,4 @@ int c_vfprintf(int stream, const char *fmt, va_list args)
     ret = c_output(buffer, fmt, args);
     return ret;
 }
+#endif
