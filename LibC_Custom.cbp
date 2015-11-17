@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="LibC/stdio" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,6 +32,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="LibC/stdio/c_printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LibC/stdio/c_stdio.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
