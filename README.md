@@ -1,8 +1,9 @@
 LibC_CUSTOM
 ===================
 
-Une LibC sans utilisation de la Heap pour l'embarqué et les micros de petite taille
+Small LibC for embedded µC with redirectable output for printf and other
 
+Tested Compiler
 -------------
-Documents
+GNU Tools ARM Embedded - 4.7 2013q1
 
