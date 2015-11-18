@@ -17,10 +17,10 @@
 /* doc in sprintf.c */
 #include "c_stdio.h"
 
-int c_sprintf(char *buf, const char *fmt, ...)
+INT32 c_sprintf(STRING buf, const STRING fmt, ...)
 {
     va_list args;
-    int rc;
+    INT32 rc;
 
     va_start(args, fmt);
 

@@ -17,20 +17,8 @@
 /* doc in sprintf.c */
 #include "c_stdio.h"
 
-INT32 c_printf(const STRING fmt, ...)
+void  c_putc (CHAR8   c)
 {
-   CHAR8 buffer[MAXBUFFER];
-   INT32 ret;
-   va_list args;
-   va_start(args, fmt);
-   ret = c_output(buffer, fmt, args);
-   va_end (args);
-
-    if (buffer != NULL)
-        buffer[ret] = '\0';
-
-   c_puts(buffer);
-
-   return ret;
+   //SH_SendChar(c);
+  printf("%c",c);
 }
-

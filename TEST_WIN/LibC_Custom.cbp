@@ -13,7 +13,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="LibC/stdio" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -31,21 +30,34 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../LibC" />
+			<Add directory="../LibC/stdio" />
 		</Compiler>
-		<Unit filename="LibC/stdio/c_fcvt.c">
+		<Unit filename="../LibC/TypeDefs.h" />
+		<Unit filename="../LibC/c_putc.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="LibC/stdio/c_output.c">
+		<Unit filename="../LibC/c_puts.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="LibC/stdio/c_printf.c">
+		<Unit filename="../LibC/stdio/c_fcvt.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="LibC/stdio/c_sprintf.c">
+		<Unit filename="../LibC/stdio/c_output.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="LibC/stdio/c_stdio.h" />
-		<Unit filename="LibC/stdio/c_vfprintf.c">
+		<Unit filename="../LibC/stdio/c_output.h" />
+		<Unit filename="../LibC/stdio/c_printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../LibC/stdio/c_sprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../LibC/stdio/c_stdio.h" />
+		<Unit filename="../LibC/stdio/c_vfprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../LibC/test_libc_custom.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="main.c">

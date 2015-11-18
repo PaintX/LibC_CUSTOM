@@ -17,20 +17,12 @@
 /* doc in sprintf.c */
 #include "c_stdio.h"
 
-INT32 c_printf(const STRING fmt, ...)
+
+void c_puts(STRING string)
 {
-   CHAR8 buffer[MAXBUFFER];
-   INT32 ret;
-   va_list args;
-   va_start(args, fmt);
-   ret = c_output(buffer, fmt, args);
-   va_end (args);
-
-    if (buffer != NULL)
-        buffer[ret] = '\0';
-
-   c_puts(buffer);
-
-   return ret;
+   while (*string)
+   {
+      c_putc(*string);
+      string++;
+   }
 }
-

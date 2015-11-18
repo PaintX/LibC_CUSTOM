@@ -178,7 +178,7 @@ static void cropzeros(char *buffer)
     }
 }
 
-int c_output(char* stream, const char *format, va_list args)
+INT16 c_output(STRING stream, const STRING format, va_list args)
 {
     int capexp = 0;
     int radix, hexadd, padding;
@@ -330,7 +330,7 @@ int c_output(char* stream, const char *format, va_list args)
                 break;
 
             case 's': // Zero terminated character string
-                text = va_arg(args, char *);
+                text = va_arg(args, STRING);
                 if (text == NULL)
                 {
                     text = "(null)";
@@ -454,7 +454,7 @@ int c_output(char* stream, const char *format, va_list args)
                 {
                     if (flags & FL_SIGNED)
                     {
-                        short n = va_arg(args, short);
+                        short n = va_arg(args, INT32);
                         if (n < 0)
                         {
                             number = -n;
@@ -467,7 +467,7 @@ int c_output(char* stream, const char *format, va_list args)
                     }
                     else
                     {
-                        number = va_arg(args, unsigned short);
+                        number = va_arg(args, UINT32);
                     }
                 }
                 else if (flags & FL_SIGNED)

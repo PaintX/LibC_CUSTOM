@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1447856300 source:c:\_kimo_\libc_custom\libc\c_putc.c
+	"c_stdio.h"
+
+1447857451 c:\_kimo_\libc_custom\libc\stdio\c_stdio.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<limits.h>
+	"TypeDefs.h"
+
+1447853972 c:\_kimo_\libc_custom\libc\typedefs.h
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+
+1447855326 source:c:\_kimo_\libc_custom\libc\c_puts.c
+	"c_stdio.h"
+
+1447857083 source:c:\_kimo_\libc_custom\libc\stdio\c_fcvt.c
+	"c_stdio.h"
+	<math.h>
+
+1447857083 source:c:\_kimo_\libc_custom\libc\stdio\c_output.c
+	"c_stdio.h"
+	<math.h>
+
+1447856472 source:c:\_kimo_\libc_custom\libc\stdio\c_printf.c
+	"c_stdio.h"
+
+1447853895 source:c:\_kimo_\libc_custom\libc\stdio\c_sprintf.c
+	"c_stdio.h"
+
+1447764200 source:c:\_kimo_\libc_custom\libc\stdio\c_vfprintf.c
+	"c_stdio.h"
+
+1447856900 source:c:\_kimo_\libc_custom\main.c
+	"c_stdio.h"
+
+1447857393 source:c:\_kimo_\libc_custom\test_win\main.c
+	"c_stdio.h"
+
+1447857392 source:c:\_kimo_\libc_custom\libc\test_libc_custom.c
+	"c_stdio.h"
+
