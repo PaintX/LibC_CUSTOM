@@ -19,19 +19,14 @@
 
 int c_printf(const char *fmt, ...)
 {
-    char buffer[MAXBUFFER];
-    int ret;
+   char buffer[MAXBUFFER];
+   int ret;
+   va_list args;
+   va_start(args, fmt);
+   ret = c_sprintf(buffer, fmt, args);
+   va_end (args);
 
-    ret = c_sprintf(buffer, fmt, args);
-
- /*   va_list args;
-
-    va_start(args, fmt);
-    ret = c_output(buffer, fmt, args);
-    va_end (args);
-*/
     //-- appliquer ici une fonction de sortie
-
 
     return ret;
 }

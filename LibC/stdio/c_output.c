@@ -324,7 +324,7 @@ int c_output(char* stream, const char *format, va_list args)
         switch (ch)
         {
             case 'c': // One character
-                buffer[0] = va_arg(args, char);
+                buffer[0] = va_arg(args, int);
                 text = buffer;
                 textlen = 1;
                 break;
@@ -405,8 +405,8 @@ int c_output(char* stream, const char *format, va_list args)
 
             case_int:
             {
-                unsigned int number;       // Number to convert (32 bit)
-                unsigned __int64 number64; // Number to convert (64 bit)
+                UINT32 number;       // Number to convert (32 bit)
+                UINT64 number64; // Number to convert (64 bit)
                 int digit;                 // ASCII value of digit
 
                 // Read argument and check for negative
@@ -414,7 +414,7 @@ int c_output(char* stream, const char *format, va_list args)
                 {
                     if (flags & FL_SIGNED)
                     {
-                        __int64 n = va_arg(args, __int64);
+                        UINT64 n = va_arg(args, INT64);
                         if (n < 0)
                         {
                             number64 = -n;
@@ -427,7 +427,7 @@ int c_output(char* stream, const char *format, va_list args)
                     }
                     else
                     {
-                        number64 = va_arg(args, unsigned __int64);
+                        number64 = va_arg(args, UINT64);
                     }
                 }
                 else if (qualifier == 'l')

@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <limits.h>
+#include "TypeDefs.h"
 
 #define MAXBUFFER           512
 
