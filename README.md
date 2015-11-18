@@ -1,8 +1,7 @@
-Welcome to LibC_CUSTOM!
+LibC_CUSTOM
 ===================
 
-----------
-
+fghfghfgh
 
 Documents
 -------------
@@ -12,5 +11,3 @@ Documents
 
 Synchronization
 -------------------
-
-
